@@ -1,0 +1,428 @@
+@charset "UTF-8";
+
+/*
+***base
+ * main contents
+ * utility
+*/
+
+
+/* //
+省略文字一覧
+fs -> font-size
+fw -> font-weight
+mb -> margin-bottom
+ml -> margin-left
+mr -> margin-right
+mt -> margin-top
+pb -> padding-bottom
+pl -> padding-left
+pr -> padding-right
+pt -> padding-top
+x -> extra
+l -> large
+s -> small
+*/
+
+/* -------------------------------------------------------
+
+   BASE
+
+------------------------------------------------------- */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden], template {
+	display: none;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+pre {
+	overflow: auto;
+}
+
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 0.9em;
+}
+
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+			box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+/* add base */
+body {
+	overflow-x: hidden;
+	background-color: #E8E8E8;
+	font-family: "メイリオ",Meiryo,"Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.6;
+}
+ul, ol {
+	list-style: none;
+}
+ul, ol, dl, p {
+	margin: 0;
+	padding: 0;
+}
+img {
+	vertical-align: top;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: none;
+}
+h1 {
+	font-size: 2em;
+}
+h2,
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+a {
+	color: #333;
+	text-decoration: underline;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/* -------------------------------------------------------
+
+   MAIN CONTENTS
+
+------------------------------------------------------- */
+
+#wrapper_low {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	background: #fff;
+	line-height: 1.4;
+}
+.main-vis .wrp-vis {
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.main-vis .wrp-vis img {width: 100%;}
+.main-vis {background-color:#e8e8e8;}
+
+
+/* -------------------------------------------------------
+
+   UTILITY
+
+------------------------------------------------------- */
+
+/*
+   テキスト
+----------------------------------------*/
+
+/* フォントサイズ */
+.fsXL {font-size: 16px;}
+.fsL {font-size: 15px;}
+.fsS {font-size: 13px;}
+.fsXS {font-size: 12px;}
+.fsXXS {font-size: 11px;}
+@media only screen and (min-width:361px) {
+	.fsXL {font-size:1.4em;}
+	.fsL {font-size:1.2em;}
+	.fsS {font-size:0.9em;}
+	.fsXS {font-size:0.8em;}
+	.fsXXS {font-size:0.67em;}
+}
+
+/* フォントの太さ */
+.fwB {font-weight: bold;}
+.fwN {font-weight: normal;}
+
+/* テキストカラー */
+.white {color : white;}
+.black {color: black;}
+.gray {color: gray;}
+.error {color: #ff0000;}
+.dRed {color: #d00e31;} /* docomo red */
+
+/* 行揃え */
+.textLeft {text-align: left;}
+.textRight {text-align: right;}
+.textCenter {text-align: center;}
+
+/* 非表示テキスト */
+.invisibleTxt {display: none;}
+
+/* インデント */
+.notesIndent{
+	text-indent: -1.0em;
+	padding: 0px 0px 0px 1em; /* 左一文字分開ける */
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+/* 段落 */
+.lineSpan{
+	margin-bottom: 1em; /* 下一行分開ける */
+}
+
+
+/*
+   ブロック
+----------------------------------------*/
+
+/* フロート */
+.floatLeft {float: left;}
+.floatRight {float: right;}
+.floatNone {float: none;}
+
+/* clearfix */
+.cfx {*zoom: 1;}
+.cfx:before,
+.cfx:after {
+	content: "";
+	display: table;
+}
+.cfx:after {
+	clear: both;
+}
+
+/* ブロック要素 */
+.dBlock {display: block;}
+
+
+/*
+   余白
+----------------------------------------*/
+
+/*----------------margin----------------*/
+/* px指定 */
+.mt0 {margin-top: 0 !important;}
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 10px !important;}
+
+.mb0 {margin-bottom: 0 !important;}
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 10px !important;}
+
+.ml0 {margin-left: 0 !important;}
+.ml5 {margin-left: 5px !important;}
+.ml10 {margin-left: 10px !important;}
+
+.mr0 {margin-right: 0 !important;}
+.mr5 {margin-right: 5px !important;}
+.mr10 {margin-right: 10px !important;}
+
+/* %指定 */
+.mt5p {margin-top: 0.5208% !important;}
+.mt10p {margin-top: 1.0416% !important;}
+.mt20p {margin-top: 2.0832% !important;}
+.mt30p {margin-top: 3.125% !important;}
+.mt40p {margin-top: 4.1664% !important;}
+.mt50p {margin-top: 5.2083% !important;}
+.mt60p {margin-top: 6.25% !important;}
+.mt70p {margin-top: 7.2916% !important;}
+
+.mb5p {margin-bottom: 0.5208% !important;}
+.mb10p {margin-bottom: 1.0416% !important;}
+.mb20p {margin-bottom: 2.0832% !important;}
+.mb30p {margin-bottom: 3.125% !important;}
+.mb40p {margin-bottom: 4.1664% !important;}
+.mb50p {margin-bottom: 5.2083% !important;}
+.mb60p {margin-bottom: 6.25% !important;}
+.mb70p {margin-bottom: 7.2916% !important;}
+
+.mr5p {margin-right: 0.5208% !important;}
+.mr10p {margin-right: 1.0416% !important;}
+.mr20p {margin-right: 2.0833% !important;}
+.mr40p {margin-right: 4.1666% !important;}
+.mr80p {margin-right: 8.3333% !important;}
+
+.ml5p {margin-left: 0.5208% !important;}
+.ml10p {margin-left: 1.0416% !important;}
+.ml20p {margin-left: 2.0833% !important;}
+.ml40p {margin-left: 4.1666% !important;}
+.ml80p {margin-left: 8.3333% !important;}
+
+
+/*----------------padding---------------*/
+
+/* px指定 */
+.pt0 {padding-top: 0 !important;}
+.pt5 {padding-top: 5px !important;}
+.pt10 {padding-top: 10px !important;}
+
+.pb0 {padding-bottom: 0 !important;}
+.pb5 {padding-bottom: 5px !important;}
+.pb10 {padding-bottom: 10px !important;}
+
+.pl0 {padding-left: 0 !important;}
+.pl5 {padding-left: 5px !important;}
+.pl10 {padding-left: 10px !important;}
+
+.pr0 {padding-right: 0 !important;}
+.pr5 {padding-right: 5px !important;}
+.pr10 {padding-right: 10px !important;}
+
+/* %指定 */
+.pt5p {padding-top: 0.5208% !important;}
+.pt10p {padding-top: 1.0416% !important;}
+.pt20p {padding-top: 2.0832% !important;}
+.pt30p {padding-top: 3.125% !important;}
+.pt40p {padding-top: 4.1664% !important;}
+.pt50p {padding-top: 5.2083% !important;}
+.pt60p {padding-top: 6.25% !important;}
+.pt70p {padding-top: 7.2916% !important;}
+
+.pb5p {padding-bottom: 0.5208% !important;}
+.pb10p {padding-bottom: 1.0416% !important;}
+.pb20p {padding-bottom: 2.0832% !important;}
+.pb30p {padding-bottom: 3.125% !important;}
+.pb40p {padding-bottom: 4.1664% !important;}
+.pb50p {padding-bottom: 5.2083% !important;}
+.pb60p {padding-bottom: 6.25% !important;}
+.pb70p {padding-bottom: 7.2916% !important;}
+
+.pr5p {padding-right: 0.5208% !important;}
+.pr10p {padding-right: 1.0416% !important;}
+.pr20p {padding-right: 2.0833% !important;}
+.pr40p {padding-right: 4.1666% !important;}
+.pr80p {padding-right: 8.3333% !important;}
+
+.pl5p {padding-left: 0.5208% !important;}
+.pl10p {padding-left: 1.0416% !important;}
+.pl20p {padding-left: 2.0833% !important;}
+.pl40p {padding-left: 4.1666% !important;}
+.pl80p {padding-left: 8.3333% !important;}
+
+/* デバイス表示切り分け */
+.pcView {display: none;}
+.spView {display: block;}
+
+@media only screen and (min-width:641px) {
+	.pcView {display: block;}
+	.spView {display: none;}
+}

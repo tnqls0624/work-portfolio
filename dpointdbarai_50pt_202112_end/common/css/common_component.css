@@ -1,0 +1,207 @@
+/*--------- ボタン ---------*/
+/*通常ボタン*/
+.next {
+  border: 2px solid #a7a7a7;
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 480px;
+}
+.next a {
+  display: block;
+}
+.next p {
+  position: relative;
+  padding: 16px 30px;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.3;
+}
+.next p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #333;
+  border-right: solid 2px #333;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 641px) {
+  .next {
+    margin: 30px auto;
+  }
+  .next p{
+    font-size: 16px;
+  }
+}
+
+/*地図ボタン*/
+.map_icon {
+}
+.map_icon p::before {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    content: "";
+    width: 25px;
+    height: 100%;
+    display: block;
+    background: url(/common/img/icon/ic_search_map.png) no-repeat 50% 50%;
+    background-size: 20px;
+}
+.map_icon a{
+    display: block;
+}
+
+
+
+
+
+
+
+/*--------- 検索 ---------*/
+.form_searchBox_outline {
+  text-align: center;
+  height: 52px;
+  font-size: 0;
+  margin: 0 auto;
+}
+.searchTextWrap {
+  position: relative;
+  width: 80%;
+  display: inline-block;
+}
+.form_input_searchText {
+  width: 100%;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border: 1px solid #8b7b74;
+  color: #8b7b74;
+  border-radius: 6px 0 0 6px;
+  font-size: 15px;
+  background: url(/common/img/icon/search_bar_icon.png) 7px no-repeat;
+  background-size: 14px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  line-height: 50px;
+}
+/* IE11 調節 */
+_:-ms-lang(x)::-ms-backdrop, .form_input_searchText {
+  height: 52px;
+}
+.form_input_searchText::placeholder{
+  color: #8b7b74;
+}
+.form_input_searchText:focus {
+  background: none;
+  padding-left: 10px;
+}
+/*テキストリセットボタン*/
+.resetBttnWrap {
+  display: none;
+  position: absolute;
+  top: 35%;
+  right: 2.5%;
+}
+.resetBttn {
+  background: url(/common/img/icon/ic_suggest_clear.png) no-repeat;
+  background-size: 18px 18px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/*IE11,Edge デフォルトの✕マーク隠す*/
+  input::-ms-clear {
+    visibility:hidden
+  }
+/* 検索ボタン */
+.form_input_searchBtn {
+  width: 20%;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #8b7b74;
+  cursor: pointer;
+  color: white;
+  vertical-align: middle;
+  border: 1px solid #8b7b74;
+  border-radius: 6px 0 0 6px;
+  line-height: 50px;
+}
+input[type="submit"] {
+  border-radius: 0 6px 6px 0;
+}
+/*--------- /検索 ---------*/
+
+/*--------- エラーパーツ ---------*/
+.ulp_errorpage #inner_footer small {
+  margin-top: 10px;
+}
+ #errorpage_wrap {
+  margin-top: 56px;
+}
+/* error contents */
+.error_wrap {
+  background: #ffffff;
+  padding: 30px 15px;
+}
+.error_wrap .error_title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #333333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+@media screen and (min-width: 641px) {
+  .error_wrap .error_title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+.error_wrap .error_title:before {
+      content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(/img/icon/icon_alert.gif) center no-repeat;
+    background-size: contain;
+    vertical-align: baseline;
+    color: #cc0033;
+    position: relative;
+    margin-right: 14px;
+    top: 2px;
+}
+@media screen and (max-width: 640px) {
+  .error_wrap .error_title:before {
+    top: 1px;
+  }
+}
+.error_wrap .error_block {
+  border-top: #cc0033 1px solid;
+  padding: 30px 12px 0 12px;
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+}
+.error_wrap .error_text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #cc0033;
+  line-height: 1.5;
+  text-align: center;
+}
+@media screen and (min-width: 641px) {
+  .error_wrap .error_text {
+    font-size: 18px;
+  }
+}
+/*--------- /エラーパーツ ---------*/

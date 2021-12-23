@@ -1,0 +1,427 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ========= common ========= */
+.appeal {
+	font-family: 'A-OTF 新ゴ Pro', sans-serif !important;
+	font-size: 10.5px;
+	font-size: 3.28125vw;
+	line-height: 1.477;
+	color: #333;
+	position:relative;
+}
+
+body img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+img,a{display:block;}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.em1pl1{
+	text-indent: -1em;
+	padding-left: 1em;
+}
+.em1pl2{
+	text-indent: -1em;
+	padding-left: 2em;
+}
+.em3pl4{
+	text-indent: -3em;
+	padding-left: 4em;
+}
+.em1pl1 a{
+ display:inline-block;
+ text-indent: 0em;
+ text-decoration: underline;
+}
+.em1pl2 a{display: inline-block; text-indent: 0em;}
+.listTit{
+ padding-top:3.90625%;
+ text-indent: -.5em;
+}
+
+.pt15{padding-top:2.553%;}
+.pt20{padding-top:3.425%;}
+.pt25{padding-top:3.90625%;}
+
+.fwB{font-weight: bold;}
+
+.dlBtnArea{padding:6.25vw 0;}
+.dlBtnArea a{max-width:100%; margin:auto;}
+
+.disN{display:none;}
+
+/* ========= kvArea ========= */
+
+.kvTxtImg{
+ max-width: 85.158%;
+ margin:auto;
+ padding:3.908% 0 4.22%;
+}
+
+/* ========= mainArea ========= */
+/* --------- mainCommon --------- */
+
+.commonTitle{
+ display: block;
+ background-color: #ff7900;
+}
+
+.CommonBtnArea{
+	background-color: #fffccc;
+}
+.CommonBtnArea p{
+	font-size:25.5px;
+	text-align: center;
+	font-weight: bold;
+ padding-top:6.25%;
+}
+.dlBtnArea{
+ max-width: 93.2%; margin:auto;
+ padding:6.25% 0 5.46875%;
+}
+.Tabwarp .CommonBtnArea p{
+ font-size: 24px;
+ max-width: 93.2%; margin:auto;
+}
+
+.txt{font-size:18.67px; text-align: center;}
+.txt a{display: inline-block; text-decoration: underline;}
+
+.commonUl{
+ font-size:18.67px;
+ line-height: 1.3;
+}
+
+/* --------- section01 --------- */
+.titleArea1{
+ max-width: 31.875%; margin:auto;
+ padding:3.425% 0;
+}
+
+.s01Warp{background: url(../img/section01_BG.png) repeat-y;}
+.s01Step1,.s01Step2{max-width: 91.875%; margin:auto;}
+.step1Head{
+ max-width:65.783%; margin:auto;
+ padding:5.314% 0 5.625%;
+}
+
+.entryBtnArea{
+ max-width: 79.22%;
+ margin: auto;
+	border-radius: 50px;
+ background-color: #cc0033 ;
+}
+.entryBtnArea a{background: url(../img/btn_arrow.png) no-repeat 95.236% center;}
+.entryBtnArea a span{
+	display: block;
+	text-align: center;
+	padding:2.364% 0 3.425%;
+	color:#fff;
+	font-size: 32px;
+	font-weight: bold;
+}
+.step2Area1 h3{
+ max-width: 84.533%; margin: auto;
+ padding:10.625% 0 1.72%;
+}
+
+.arrowArea{
+ max-width:7.34375%; margin:auto;
+ padding:5.3125% 0 2.03125%;
+}
+
+.step2Area2 ul{padding:2.1875% 0 8.4375%;}
+/* --------- section02 --------- */
+.titleArea2{
+ max-width: 88.75%; margin:auto;
+ padding:4.375% 0;
+}
+
+.s02Warp{background-color:#fff6e5; padding-bottom:12.5%;}
+.s02MainArea > h3{
+ max-width: 79.21875%; margin:auto;
+ padding:5.15625% 0 4.375%;
+}
+
+.s02TabWrap{
+	max-width:91.875%;
+	margin:auto;
+	box-sizing: border-box;
+	border:2px solid #ff9900;
+	background-color: #fff;
+}
+
+.tabBtn{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+ background-color: #ff9900;
+}
+.tabBtn li{
+	width:50%;
+ padding:2.8% 0 3.6%;
+	font-size:32px;
+	font-weight: bold;
+	text-align: center;
+ color:#fff !important;
+ cursor: pointer;
+}
+.tabBtn li.open{
+ background-color: #fff;
+ color:#ff9900 !important;
+}
+
+.tabArea{display: none;}
+.openTab{display:block;}
+
+.Tabwarp{padding:3.425%; }
+.Tabwarp img{margin:auto;}
+
+.fs18{font-size:18px;}
+.fs20{font-size:20px;}
+.boxAtag{
+ padding:2.208% 0 6.068%;
+ text-align: center;
+ text-decoration: underline !important;
+}
+
+/* tab01 */
+.s02T01_1 h3{
+ max-width: 93.985%; margin: auto;
+ padding:5.885% 0 4.965%;
+}
+
+.boxTxt{text-align: center; padding:3.425% 0 7.355%;}
+
+.tapComTit,.tab1Title02{max-width: 93.2%; margin:auto;}
+.tab1Title03{max-width: 81.62%; margin:auto;}
+.brandArea{
+ max-width: 93.2%; margin: auto;
+ display:flex;
+ justify-content: flex-start;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.brandArea li{
+ width:31.6%;
+ margin: 0 2.575% 2.575% 0;
+}
+.brandArea li:nth-child(3n){margin-right: 0px;}
+
+.s02T01TxtArea{padding:2.575% 0 13.605%;}
+.s02T01TxtArea2{padding:2.575% 0;}
+
+.s02T01_2 h3{padding-bottom: 4.965%;}
+
+.t01img01txt{
+ text-align: center;
+ padding:4.965% 0 0.92%;
+}
+.s02T01_2 p.fs18{
+ padding-bottom:9.745%;
+ text-align: center;
+}
+.t01img02txt{ text-align: center;}
+.s02T01Img3{
+ max-width: 49.083%; margin:auto;
+ padding:4.965% 0 10.48%;
+}
+
+/* tab02 */
+.s02Tab02 .TabComTit{padding:5.515% 0 4.965%;}
+.TabComTit{max-width: 93.2%; margin:auto;}
+.s02t2tit1{
+ max-width: 93.985%; margin:auto;
+ padding:5.885% 0 4.965%;
+}
+
+.s02t2Txt1{
+ text-align: center;
+ padding:3.678% 0 7.355%;
+}
+.s02T02Main2 ul.fs18{padding-bottom: 12.87%;}
+
+.s02t2tit2{max-width: 93.015%; margin:auto; padding-bottom:4.965%;}
+.s02t2Txt2{
+ text-align: center;
+ padding:4.965% 0 9.194%;
+}
+.s02t2tit2_2{max-width: 81.62%; margin:auto; padding-bottom:4.045%;}
+.s02t2Txt3{text-align: center; padding-bottom:4.78%;}
+.s02Tab02AreaImg{padding-bottom: 7.905%;}
+.tab2last{padding-bottom:2.575%;}
+
+/* --------- section03 --------- */
+.s03Warp{max-width: 91.875%; margin:auto;}
+.s03Warp img{margin:auto;}
+.titleArea3{
+ max-width: 88.59375%; margin:auto;
+ padding:4.84375% 0;
+}
+
+.s03MATitle h3{
+ max-width: 61.71875%; margin: auto;
+ padding:8.125% 0 3.425%;
+}
+.s03MATitle p{font-size:20px; text-align: center;}
+
+.s03MA1AreaImg{
+ padding:5.3125% 0 2.1875%;
+}
+.s03MaTxtArea{padding-bottom:11.40625%;}
+
+.s03MATitle2 h3{ padding-bottom:8.28125%;}
+
+.s03MA2AreaImg{padding-bottom:4.0625%;}
+
+.LinkTxt{
+ font-size: 16px; text-align: center;
+ padding-top:2.03125%;
+}
+.LinkTxt a,.MainNoticeList li a{display: inline-block; text-decoration: underline;}
+
+.MainNotice h2{
+ max-width:46.40625%; margin:auto;
+ padding:11.40625% 0 4.21875%;
+}
+
+.campaingCode{
+ font-size: 20px;
+ text-align: right;
+ padding:2.213% 0 8.505%;
+}
+
+.s03WebNotice{
+ font-size: 20px;
+}
+
+.MNareaFlame{
+	display: none;
+	padding:2.533%;
+ border-left:4px solid #ff5114;
+ border-right:4px solid #ff5114;
+ border-bottom:4px solid #ff5114;
+}
+.MainNoticeList{font-size: 16px;}
+.listTable{
+	width: 100%;
+	border: 1px solid #333;
+	border-spacing: 0;
+}
+.MainNoticeList .listTable * {
+	font-size: 12px;
+}
+.fs15{font-size: 15px !important;}
+.listTable * {line-height: 1.2;}
+.listTable th{
+	border-right: 1px solid #333;
+	text-align: center;
+	font-weight: bold;
+}
+.thmain{border-bottom: 1px solid #333;}
+.listTable td {
+	background: #fff;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.listTable th, .listTable td {
+	padding: 10px 5px;
+	vertical-align: middle;
+}
+.cnt_center{width:13%; text-align: center;}
+.comWd{width:24% !important;}
+
+/*コンテンツここまで*/
+
+/* 追従ボタン */
+.floatPcBnr{
+	height: 357px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	z-index: 2;
+	opacity: 0;
+	transition: .5s;
+}
+a.floatPcLink{width:121px;}
+.invisibleTxt{display:none;}
+
+
+/* ie10 ver */
+@media screen and (min-width:0\0) {
+	.entryBtnArea a span{
+		display: inline-block;
+		text-align: center;
+		padding:4% 17% 4.8%;
+		line-height: 1;
+		color:#fff;
+		font-size: 32px;
+		font-weight: bold;
+	}
+	.tabBtn li{padding:5% 0 2.535%;}
+}
+
+
+@media (max-width: 640px) {
+	.disN{display:block;}
+
+	.spEntryArea{display: block;}
+	.spEntryArea.fixBtn{
+		width: 100%;
+		height: 18vw;
+		margin: auto;
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%,0);
+		display: block;
+		text-align: center;
+		z-index: 5;
+		background-color: rgba(255,255,255,.8);
+		padding: 5.5vw 4vw 4vw;
+		box-sizing: border-box;
+	}
+
+	.entryBtnArea.fixBtn{
+		max-width: 79.22%;
+		width:100%;
+		z-index: 50;
+		margin: auto 0 3vw;
+		position: fixed;
+		bottom:0; left:50%;
+		transform: translate(-50%,0);
+	}
+
+
+.appeal{font-size: 9.84375vw !important;}
+.CommonBtnArea p,
+.tabBtn li{font-size:51.1131%;}
+.Tabwarp .CommonBtnArea p{font-size: 40.635%;}
+.txt,.commonUl{ font-size:29.635%;}
+.entryBtnArea a span{	font-size: 50.7936%;}
+.fs18{font-size: 29.635%;}
+.fs20{font-size: 31.746%;}
+.LinkTxt{ font-size: 25.3968%; }
+.s03MATitle p,
+.campaingCode,
+.s03WebNotice{font-size: 31.746%;}
+
+.MainNoticeList{font-size: 12px;}
+.MainNoticeList .listTable * {	font-size: 10px;}
+
+.floatPcBnr{display: none;}
+}

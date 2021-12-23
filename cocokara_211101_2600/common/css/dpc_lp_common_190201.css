@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/*
+***component
+ * contents
+ * dcard
+ * global
+ * interactive
+ */
+
+/* //
+命名規則はキャメルケース
+*/
+
+/* //
+省略文字一覧
+btn -> button
+c -> center
+cp -> campaign
+conts -> contents
+d_red -> docomo red
+fs -> font-size
+fw -> font-weight
+l -> left/large
+mb -> margin-bottom
+ml -> margin-left
+mr -> margin-right
+mt -> margin-top
+pb -> padding-bottom
+pl -> padding-left
+pr -> padding-right
+pt -> padding-top
+r -> right
+s -> small
+txt -> text
+ttl -> title
+*/
+
+/* -------------------------------------------------------
+
+  コンポーネント
+
+------------------------------------------------------- */
+
+/*
+  コンテンツ
+----------------------------------------*/
+.kv {
+	text-align: center;
+}
+
+/* 見出し */
+.kv + section > .contsTtl {
+	padding-top: 7.29167%;
+}
+
+.contsTtl {
+	padding: 0 3.125% 3.125%;
+}
+
+.contsTtl span {
+	display: block;
+	padding: 7px 20px 5px;
+	font-size: 22px;
+	background: #999;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+@media only screen and (min-width: 641px) {
+	.contsTtl,
+	.contsTtl_line {
+		padding: 0 4.16667% 3.125%;
+	}
+	.contsTtl_line span {
+		border-bottom: 4px solid #D00F31;
+	}
+}
+
+/* テキスト */
+.contsTxt {
+	padding: 0 3.125% 3.125%;
+	line-height: 1.6;
+	font-size: 18px;
+	color: #333333;
+	padding: 0 8.33333% 3.125%;
+}
+
+@media only screen and (min-width: 641px) {
+	.contsTxt {
+		/*padding: 0 8.33333% 3.125%;*/
+	}
+}
+
+/* 画像 */
+.contsImg {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 3.125% 3.125%;
+}
+
+@media only screen and (min-width: 641px) {
+	.contsImg {
+		padding: 0 8.33333% 3.125%;
+	}
+}
+
+/*
+  ご利用カードエリア
+----------------------------------------*/
+.dcard {
+	padding: 0 3.125% 3.125%;
+}
+
+.dcardArea {
+	background: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid #D00F31;
+}
+
+.dcardAreaTtl {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 4.09091% 3.63636% 3.63636%;
+}
+
+.dcardAreaList {
+	padding: 0 4.20455% 4.54545%;
+}
+
+.dcardAreaBtn {
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 0 4.20455% 4.54545%;
+}
+
+.dcardAreaBtn a {
+	display: block;
+	text-align: center;
+}
+
+@media only screen and (min-width: 361px) {
+	.dcardArea {
+		border: 3px solid #D00F31;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	.dcard {
+		padding: 0 4.16667% 3.125%;
+	}
+}
+
+/*
+  全体
+----------------------------------------*/
+/* ご注意事項 */
+.cpNotes {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 8.33333% 3.125%;
+}
+
+.cpNotesBtnWrap {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cpNotesBtnWrap {
+	position: relative;
+	padding-bottom: 3px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px -3px 0px 0px #d00e31 inset;
+	box-shadow: 0px -3px 0px 0px #d00e31 inset;
+	border: 2px solid #D00E31;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.cpNotesBtn {
+	display: table;
+	width: 100%;
+}
+
+.cpNotesBtn a {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.cpNotesFlame {
+	display: none;
+	border-left: 2px solid #D00E31;
+	border-right: 2px solid #D00E31;
+	border-bottom: 2px solid #D00E31;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+}
+
+.cpNotesList {
+	padding: 10px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.cpNotesTtl {
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+
+.cpNotesSubttl {
+	margin-top: 1em;
+}
+
+.cpNotesItem {
+	text-indent: -1.0em;
+	padding: 0px 0px 0px 1em;
+}
+
+@media only screen and (min-width: 361px) {
+	.cpNotesList {
+		padding: 20px;
+	}
+	.cpNotesTtl,
+	.cpNotesList {
+		font-size: 14px;
+	}
+	.cpNotesBtnWrap {
+		padding-bottom: 4px;
+		-webkit-box-shadow: 0px -4px 0px 0px #d00e31 inset;
+		box-shadow: 0px -4px 0px 0px #d00e31 inset;
+		border-width: 3px;
+	}
+	.cpNotesFlame {
+		border-width: 3px;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	.cpNotesBtnWrap {
+		padding-bottom: 6px;
+		-webkit-box-shadow: 0px -6px 0px 0px #d00e31 inset;
+		box-shadow: 0px -6px 0px 0px #d00e31 inset;
+	}
+}
+
+.shadowJs {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+
+/* テキストボタン */
+.normalBtn {
+	margin: 0 auto;
+	padding: 0 8.33333% 3.125%;
+}
+
+.normalBtnLink {
+	display: table;
+	position: relative;
+	padding: 19px 45px 20px;
+	margin: 0 auto;
+	font-size: 16px;
+	background-color: #999;
+	line-height: 1.3;
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px -5px 0px 0px #666 inset;
+	box-shadow: 0px -5px 0px 0px #666 inset;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.normalBtnLink:after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/btn_arrrow.png");
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: auto;
+	top: 50%;
+	right: 13px;
+	vertical-align: middle;
+	-ms-transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
+	transform: translate(-50%, -60%);
+}
+
+.normalBtnSpan {
+	display: table-cell;
+	text-align: center;
+}
+
+.normalBtnTxt {
+	display: inline-block;
+}
+
+@media only screen and (max-width: 640px) {
+	.normalBtnLink:after {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	.normalBtn {
+		font-size: 36px;
+		width: 540px;
+	}
+	.normalBtnLink {
+		font-size: 30px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.normalBtnLink:after {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+/* 注釈全般 */
+.notesItem {
+	padding: 0px 0px 0px 1em;
+	font-size: 16px;
+	text-indent: -1.0em;
+}
+
+/* dポイントクラブサイトTOPへボタン */
+.dpointLinkTp {
+	padding: 5.2083% 8.3333%;
+}
+.dpointBtnTp {
+	display: block;
+	max-width: 798px;
+	margin: 0 auto;
+}
+
+/* 終了対応 */
+.cpCloseAlertWrp {
+	width: 100%;
+	display: table;
+}
+
+.cpCloseAlert {
+	padding-left: 19px;
+	padding-bottom: 3px;
+	color: #C70014;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 25px 20px 20px;
+	padding: 15px;
+	border: solid 1px #df6177;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fcf0f2;
+	margin-bottom: 30px;
+}
+
+.cpCloseBr {
+	display: none;
+}
+
+@media screen and (max-width: 460px) {
+	.cpCloseBr {
+		display: block;
+	}
+}
+
+/* 注釈文言 */
+.info_wrap {
+	padding: 4.166%;
+	border-top: 0;
+}
+	.info_mt {
+		display: table;
+		padding: 1em;
+		border: 3px solid #bd0c2c;
+		border-radius: 6px;
+		background: #fff;
+	}
+	.info_wrap h3 {
+		margin: 0 0 0.5em;
+		color: #bd0c2c;
+		font-weight: bold;
+		font-size: 2rem; /* 20px */
+		text-align: center;
+		padding: 0 !important;
+	}
+	.info_wrap h3::before {
+		content:none !important;
+}
+	.info_wrap .info_inner {
+		overflow: hidden;
+	}
+	.info_wrap dd {
+		display: table-cell;
+		margin: 0;
+	}
+	.info_wrap .info_mark {
+		float: left;
+		padding: 0 1em 0 0;
+		box-sizing: border-box;
+		max-width: 130px;
+		width: 22%;
+		min-width: 48px;
+	}
+	.info_wrap .info_txt {
+		width: 78%;
+		line-height: 1.4;
+		font-size: 1.8rem; /* 18px */
+	}
+	.info_wrap a {
+		color: #3366ff;
+		text-decoration: underline;
+	}		  
+  .txtIndent{
+	  text-indent: -1em;
+	  padding-left: 1em;
+  }
+@media only screen and (max-width: 640px) {
+  .info_wrap h3 {
+    font-size: 1.6rem;
+  }
+  .info_wrap .info_txt {
+    font-size: 1.4rem;
+  }
+}
+
+
+/*
+  インタラクティブ
+----------------------------------------*/
+/* カルーセル */
+.carouselLink {
+	display: block;
+}
+
+/* アコーディオン */
+.displayNone {
+	display: none;
+}
+
+.accordion {
+	font-size: 22px;
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 0 8.33333% 3.125%;
+}
+
+.accordion ul {
+	overflow: hidden;
+	border-right: 3px solid #999;
+	border-bottom: 3px solid #999;
+	border-left: 3px solid #999;
+	-webkit-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
+.accordion li {
+	float: left;
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+}
+
+.accordion a {
+	display: block;
+}
+
+.switch {
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 19px 45px 20px;
+	background: #ec265d;
+	position: relative;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px -5px 0px 0px #666 inset;
+	box-shadow: 0px -5px 0px 0px #666 inset;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0 auto;
+	background-color: #999;
+	line-height: 1.3;
+	width: 100%;
+}
+
+.switch:after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/btn_arrrow.png");
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: auto;
+	top: 50%;
+	right: 13px;
+	vertical-align: middle;
+	-ms-transform: translate(-50%, -60%) rotate(90deg);
+	-webkit-transform: translate(-50%, -60%) rotate(90deg);
+	transform: translate(-50%, -60%) rotate(90deg);
+}
+
+.switch.open {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.switch.open:after {
+	-moz-transform: translate(-50%, -60%) rotate(-90deg);
+	-ms-transform: translate(-50%, -60%) rotate(-90deg);
+	-webkit-transform: translate(-50%, -60%) rotate(-90deg);
+	transform: translate(-50%, -60%) rotate(-90deg);
+}
+
+.txtLinkBlock {
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 1em 0;
+}
+
+.txtLinkBlock a {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 640px) {
+	.switch:after {
+		width: 20px;
+		height: 20px;
+	}
+	.accordion {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 641px) {
+	.accordion {
+		font-size: 22px;
+		width: 540px;
+	}
+	.switch {
+		font-size: 30px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.switch.open {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-border-radius: 10px 10px 0 0;
+		border-radius: 10px 10px 0 0;
+	}
+	.switch:after {
+		width: 30px;
+		height: 30px;
+	}
+}

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body, html{
+	height: 100%;
+}
+input, button, textarea, select {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	word-break: normal;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: 100%;
+}
+fieldset, img, figure {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	font-size:0;
+	line-height: 0;
+}
+address, caption, cite, code, dfn, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before, q:after {
+	content: '';
+}
+abbr, acronym {
+	border: 0;
+}
+hr {
+	display: none;
+}
+div {
+	word-break:break-all;
+}
+a:link,
+a:visited,
+a:active,
+a:hover {
+	/*-- overflow: hidden; --*/
+	outline: none;
+	text-decoration:none;
+	outline: none;
+}
+input[type="button"],input[type="submit"],input[type=radio],input[type=checkbox] {
+    -webkit-appearance: none;
+	border-radius:0;
+}

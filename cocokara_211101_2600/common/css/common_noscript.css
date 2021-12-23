@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#wrap_page{
+    display: none;
+}
+
+#noscript_wrap{
+    width: 100%;
+}
+
+#noscript_wrap .noscript_head{
+    background-color: #cb1132;
+    padding: 20px 0;
+    text-align: center;
+}
+#noscript_wrap .noscript_head img{
+    width: 138px;
+}
+
+#noscript_wrap .noscript_main{
+    padding: 30px 0;
+    color: #C70014;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#noscript_wrap .noscript_foot{
+    background-color: #333;
+    color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+}

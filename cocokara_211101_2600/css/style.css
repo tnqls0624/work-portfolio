@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+.contsTtl .redH {
+	background: #d00f31;
+}
+
+.conts01, .conts02 {max-width: 800px;
+    width: 83.34%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.conts01 .contsTxt01 {margin-bottom: 2.91%;}
+.conts01 .contsTxt02 {
+	margin: 7.29% 0 6.25%;
+    font-size: 18px;
+    line-height: 1.6;}
+  .conts01 .contsTxt02 a {text-decoration: underline;color: #d00f31;display: inline-block;}
+
+.redBtn {
+	background-color: #d00f31;
+	-webkit-box-shadow: 0px -5px 0px 0px #a2031f inset;
+	box-shadow: 0px -5px 0px 0px #a2031f inset;
+}
+.cpBtnY {
+	background: #fad025;
+	color: #111111;
+	-webkit-box-shadow: 0px -5px 0px 0px #b39f3f inset;
+	box-shadow: 0px -5px 0px 0px #b39f3f inset;
+}
+.cpBtnG {
+	background: #2dad55;
+	-webkit-box-shadow: 0px -5px 0px 0px #1f823e inset;
+	box-shadow: 0px -5px 0px 0px #1f823e inset;
+}
+.dbaraiBtn{
+	margin: 0 auto;
+	padding: 0 13.54167% 3.125%;
+}
+.dbaraiList01{
+	padding: 0 5%;
+	overflow: hidden;
+	background: url("../img/imgparts9_2_01_bg.png") repeat-y;
+}
+.dbaraiList02{
+	padding: 0 5%;
+	overflow: hidden;
+	background: url("../img/imgparts9_5_01_bg.png") repeat-y;
+}
+.dbaraiList03{
+	padding: 0 5%;
+	overflow: hidden;
+	background: url("../img/imgparts9_8_01_bg.png") repeat-y;
+}
+.dbaraiList01 li,
+.dbaraiList02 li,
+.dbaraiList03 li{
+	width: 31.945%;
+	float: left;
+	margin-right: 2.085%;
+}
+.dbaraiList01 li:nth-child(3n+0),
+.dbaraiList02 li:nth-child(3n+0),
+.dbaraiList03 li:nth-child(3n+0){
+	margin-right: 0;
+	margin-bottom: 3%;
+}
+.dbaraiAppbg01{
+	background: #ffffe5;
+}
+
+/*フロートバナー*/
+.floatSpBnr {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: none;
+	z-index: 2;
+	box-sizing: border-box;
+}
+
+.floatSpLink {
+	display: block;
+}
+
+.floatSpBnr img {
+	width: 100%;
+}
+
+.floatPcBnr {
+	height: 300px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	z-index: 2;
+}
+a.floatPcLink {
+	display: block;
+}
+
+@media only screen and (max-width: 640px) {
+	.floatSpBnr,a.floatSpLink {
+		display: block;
+	}
+	.floatPcBnr,a.floatPcLink {
+		display: none;
+	}
+    .pagetopBtn {
+		bottom: 15%;
+	}
+	.pb150pApp {padding-bottom: 15% !important;}
+  
+}
+.normalBtn {width: 100%;box-sizing: border-box;}
+@media only screen and (min-width: 641px){
+	.normalBtn {width: 100%;box-sizing: border-box;}
+}
+
+@media only screen and (min-width: 768px){
+	.normalBtn {width: 540px;box-sizing: content-box;}
+}
